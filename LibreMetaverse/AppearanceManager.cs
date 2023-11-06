@@ -1295,7 +1295,7 @@ namespace OpenMetaverse
 
         public Dictionary<AttachmentPoint, InventoryItem> GetAttachmentsByAttachmentPoint()
         {
-            var attachmentsByPoint = new MultiValueDictionary<AttachmentPoint, InventoryItem>();
+            var attachmentsByPoint = new Dictionary<AttachmentPoint, InventoryItem>();
 
             foreach (var item in Attachments)
             {
