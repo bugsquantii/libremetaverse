@@ -1293,7 +1293,7 @@ namespace OpenMetaverse
             return Attachments.ToDictionary(k => k.Key, v => v.Value);
         }
 
-        public MultiValueDictionary<AttachmentPoint, InventoryItem> GetAttachmentsByAttachmentPoint()
+        public Dictionary<AttachmentPoint, InventoryItem> GetAttachmentsByAttachmentPoint()
         {
             var attachmentsByPoint = new MultiValueDictionary<AttachmentPoint, InventoryItem>();
 
